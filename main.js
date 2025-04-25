@@ -51,7 +51,7 @@ app.post("/contact", contactFormLimiter, async (req, res) => {
 	try {
 		await transporter.sendMail(mailOptions);
 		res.status(200).json({
-			message: "Your message has been sent successfully.",
+			message: "Your message has been sent successfully. Thank you !",
 		});
 	} catch (error) {
 		console.error("Error sending email:", error);
